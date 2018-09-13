@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2047
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Albatross.SemVer", "Albatross.SemVer\Albatross.SemVer.csproj", "{A3627117-F43E-4D69-9A33-7D141A9633B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Albatross.SemVer.UnitTest", "Albatross.SemVer.UnitTest\Albatross.SemVer.UnitTest.csproj", "{58DCE07E-F999-4DF3-B6DE-E8ACD75229E6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3627117-F43E-4D69-9A33-7D141A9633B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3627117-F43E-4D69-9A33-7D141A9633B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3627117-F43E-4D69-9A33-7D141A9633B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3627117-F43E-4D69-9A33-7D141A9633B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58DCE07E-F999-4DF3-B6DE-E8ACD75229E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58DCE07E-F999-4DF3-B6DE-E8ACD75229E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58DCE07E-F999-4DF3-B6DE-E8ACD75229E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58DCE07E-F999-4DF3-B6DE-E8ACD75229E6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C7AA4EB-6B5D-4A81-BA64-04D1B524D7FB}
+	EndGlobalSection
+EndGlobal
