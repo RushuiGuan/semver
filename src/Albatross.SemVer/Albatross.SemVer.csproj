@@ -7,4 +7,7 @@
     <StartupObject />
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Core\" />
+  </ItemGroup>
 </Project>
