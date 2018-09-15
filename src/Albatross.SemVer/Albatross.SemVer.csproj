@@ -6,8 +6,4 @@
     <OutputType>Library</OutputType>
     <StartupObject />
   </PropertyGroup>
-
-  <ItemGroup>
-    <Folder Include="Core\" />
-  </ItemGroup>
 </Project>
