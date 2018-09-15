@@ -9,7 +9,7 @@ namespace Albatross.SemVer {
 	/// Simplified sematic version 2.0
 	/// Only allows a label and a revision number for pre-releases
 	/// </summary>
-	public class SematicVersion {
+	public sealed class SematicVersion : IComparable<SematicVersion> {
 		public SematicVersion() { }
 		public SematicVersion(string version) {
 			Parse(version);
@@ -80,7 +80,7 @@ namespace Albatross.SemVer {
 			} else if (hyphenIndex == -1 && plusIndex != -1) {
 				versionText = input.Substring(0, plusIndex);
 			} else {
-				prereleaseText = input.Substring(hyphenIndex + 1, plusIndex - hyphenIndex-1);
+				prereleaseText = input.Substring(hyphenIndex + 1, plusIndex - hyphenIndex - 1);
 			}
 			ParseVersion(versionText);
 			if (prereleaseText != null) {
@@ -134,7 +134,8 @@ namespace Albatross.SemVer {
 			}
 			return sb.ToString();
 		}
-		public bool IsRelease => Major != 0 && (PreRelease == null || PreRelease.Count() > 0);
+		public bool IsRelease => Major != 0 && !HasPreRelease;
+		public bool HasPreRelease => PreRelease?.Count() > 0;
 		/// <summary>
 		/// Validate the prerelease and metadata format
 		/// </summary>
@@ -158,6 +159,53 @@ namespace Albatross.SemVer {
 						throw new FormatException();
 					}
 				}
+			}
+		}
+
+		public override bool Equals(object obj) {
+			if (obj != null && obj is SematicVersion) {
+				return this.CompareTo((SematicVersion)obj) == 0;
+			} else {
+				return false;
+			}
+		}
+
+
+		public int CompareTo(SematicVersion sematicVersion) {
+			if (sematicVersion != null) {
+				int result = Major.CompareTo(sematicVersion.Major);
+				if (result == 0) {
+					result = Minor.CompareTo(sematicVersion.Minor);
+					if (result == 0) {
+						result = Patch.CompareTo(sematicVersion.Patch);
+						if (result == 0) {
+							if (HasPreRelease == false && sematicVersion.HasPreRelease == false) {
+								result = 0;
+							} else if (HasPreRelease && !sematicVersion.HasPreRelease) {
+								result = -1;
+							} else if (!HasPreRelease && sematicVersion.HasPreRelease) {
+								result = 1;
+							} else {
+								string[] a = PreRelease.ToArray();
+								string[] b = sematicVersion.PreRelease.ToArray();
+								for (int i = 0; i < a.Length && i < b.Length; i++) {
+									result = a[i].CompareTo(b[i]);
+									if (result != 0) { break; }
+								}
+								if (result == 0) {
+									if (a.Length > b.Length) {
+										result = 1;
+									} else if (a.Length < b.Length) {
+										result = -1;
+									}
+								}
+							}
+						}
+					}
+				}
+				return result;
+			} else {
+				throw new ArgumentNullException();
 			}
 		}
 	}
