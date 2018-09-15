@@ -162,15 +162,6 @@ namespace Albatross.SemVer {
 			}
 		}
 
-		public override bool Equals(object obj) {
-			if (obj != null && obj is SematicVersion) {
-				return this.CompareTo((SematicVersion)obj) == 0;
-			} else {
-				return false;
-			}
-		}
-
-
 		public int CompareTo(SematicVersion sematicVersion) {
 			if (sematicVersion != null) {
 				int result = Major.CompareTo(sematicVersion.Major);

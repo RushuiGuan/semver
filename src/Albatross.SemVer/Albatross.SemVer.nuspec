@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>Albatross.SemVer</id>
+    <version>1.0.5-alpha</version>
+    <title>Albatross Semantic Version Library</title>
+    <summary>Albatross Semantic Version Library</summary>
+    <description>Albatross Semantic Version Library</description>
+    <authors>Rushui Guan</authors>
+    <owners>Rushui Guan</owners>
+    <licenseUrl>https://github.com/RushuiGuan/license/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/RushuiGuan/semver</projectUrl>
+    <tags>SemVer semantic version</tags>
+  </metadata>
+  <files>
+    <file src="bin\release\netstandard2.0\Albatross.SemVer.*" target="lib\netstandard2.0" />
+    <file src="bin\release\netstandard2.0\*.ps1" target="lib\netstandard2.0" />
+
+    <file src="bin\release\net46\Albatross.SemVer.*" target="lib\net46" />
+    <file src="bin\release\net46\*.ps1" target="lib\net46" />
+  </files>
+</package>

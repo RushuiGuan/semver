@@ -1,9 +1,15 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFrameworks>netstandard2.0;net46</TargetFrameworks>
     <ApplicationIcon />
     <OutputType>Library</OutputType>
     <StartupObject />
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="version.ps1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
 </Project>
