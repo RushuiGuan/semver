@@ -1,11 +1,8 @@
 ﻿using System;
 using System.Text.RegularExpressions;
 
-namespace Albatross.SemVer {
-	/// <summary>
-	/// Simplified sematic version 2.0
-	/// Only allows a label and a revision number for pre-releases
-	/// </summary>
+namespace Albatross.SemVer.Core {
+	
 	public class SematicVersion {
 		const string DefaultLabel = "alpha";
 		const string Pattern = @"^(\d+)\.(\d+)\.(\d+)(-([a-zA-Z_]+)(\.(\d+))?)?$";
