@@ -5,11 +5,8 @@
     <ApplicationIcon />
     <OutputType>Library</OutputType>
     <StartupObject />
+    <AssemblyVersion>1.2.3.1</AssemblyVersion>
+    <FileVersion>1.0.3.1</FileVersion>
+    <Version>1.0.0-alpha</Version>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Content Include="version.ps1">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
 </Project>

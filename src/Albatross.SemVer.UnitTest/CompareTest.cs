@@ -1,6 +1,7 @@
 ﻿using NUnit.Framework;
 using System;
 using System.Collections.Generic;
+using System.Reflection;
 using System.Text;
 
 namespace Albatross.SemVer.UnitTest
@@ -42,6 +43,11 @@ namespace Albatross.SemVer.UnitTest
 		[TestCase("b", "a", ExpectedResult = 1)]
 		public int CompareString(string a, string b) {
 			return a.CompareTo(b);
+		}
+
+		public void Test() {
+			Assembly asm = Assembly.GetExecutingAssembly();
+			asm.GetName().Version.Major
 		}
 	}
 }
