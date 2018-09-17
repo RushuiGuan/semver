@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Text;
+using System.Xml;
 
 namespace Albatross.SemVer.UnitTest
 {
@@ -47,7 +48,11 @@ namespace Albatross.SemVer.UnitTest
 
 		public void Test() {
 			Assembly asm = Assembly.GetExecutingAssembly();
-			asm.GetName().Version.Major
+			new System.Version("");
+			XmlDocument doc;
+			XmlElement elem;
+			elem.InnerText
+			
 		}
 	}
 }
