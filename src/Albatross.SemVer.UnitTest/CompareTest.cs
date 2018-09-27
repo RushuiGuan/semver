@@ -45,14 +45,5 @@ namespace Albatross.SemVer.UnitTest
 		public int CompareString(string a, string b) {
 			return a.CompareTo(b);
 		}
-
-		public void Test() {
-			Assembly asm = Assembly.GetExecutingAssembly();
-			new System.Version("");
-			XmlDocument doc;
-			XmlElement elem;
-			elem.InnerText
-			
-		}
 	}
 }
