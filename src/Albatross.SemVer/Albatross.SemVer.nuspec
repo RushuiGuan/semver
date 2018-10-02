@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>Albatross.SemVer</id>
-    <version>1.0.5</version>
+    <version>1.0.5-alpha</version>
     <title>Albatross Semantic Version Library</title>
     <summary>Semantic Version 2.0 Implementation</summary>
     <description>Supports parsing and operations of Major, Minor, Patch, Prerelease and Metadata according to semver2.0 spec.  </description>

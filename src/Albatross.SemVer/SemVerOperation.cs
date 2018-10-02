@@ -7,7 +7,7 @@ using System.Text.RegularExpressions;
 namespace Albatross.SemVer {
 
 	public class SemVerOperation : ISemanticVersionOperation {
-		public void Next(SematicVersion sematicVersion, string label = "alpha") {
+		public void NextPrerelease(SematicVersion sematicVersion, string label = "alpha") {
 			List<string> list = new List<string>();
 
 			if (sematicVersion.PreRelease == null || sematicVersion.PreRelease.Count() == 0) {
@@ -25,32 +25,24 @@ namespace Albatross.SemVer {
 			sematicVersion.Validate();
 		}
 
-		public void NextMajor(SematicVersion sematicVersion, string label = "alpha") {
+		public void NextMajor(SematicVersion sematicVersion) {
 			sematicVersion.Major++;
 			sematicVersion.Minor = 0;
 			sematicVersion.Patch = 0;
-			sematicVersion.PreRelease = new string[] { label };
+			sematicVersion.PreRelease = null;
 			sematicVersion.Validate();
 		}
 
-		public void NextMinor(SematicVersion sematicVersion, string label = "alpha") {
+		public void NextMinor(SematicVersion sematicVersion) {
 			sematicVersion.Minor++;
 			sematicVersion.Patch = 0;
-			sematicVersion.PreRelease = new string[] { label };
-			sematicVersion.Validate();
-		}
-
-		public void NextPatch(SematicVersion sematicVersion, string label = "alpha") {
-			sematicVersion.Patch++;
-			sematicVersion.PreRelease = new string[] { label };
-			sematicVersion.Validate();
-		}
-
-		public void NextRelease(SematicVersion sematicVersion) {
 			sematicVersion.PreRelease = null;
-			if(sematicVersion.Major == 0) {
-				sematicVersion.Major = 1;
-			}
+			sematicVersion.Validate();
+		}
+
+		public void NextPatch(SematicVersion sematicVersion) {
+			sematicVersion.Patch++;
+			sematicVersion.PreRelease = null;
 			sematicVersion.Validate();
 		}
 	}
