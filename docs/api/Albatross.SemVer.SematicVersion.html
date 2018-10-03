@@ -1,0 +1,715 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SematicVersion
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SematicVersion
+   ">
+    <meta name="generator" content="docfx 2.39.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav container-fluid navbar navbar-default">
+          <div class="hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Albatross.SemVer.SematicVersion">
+  
+  
+  <h1 id="Albatross_SemVer_SematicVersion" data-uid="Albatross.SemVer.SematicVersion" class="text-break">Class SematicVersion
+  </h1>
+  <div class="markdown level0 summary"><p>Simplified sematic version 2.0
+Only allows a label and a revision number for pre-releases</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">SematicVersion</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IComparable</span>&lt;<a class="xref" href="Albatross.SemVer.SematicVersion.html">SematicVersion</a>&gt;</div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Albatross.SemVer.html">Albatross.SemVer</a></h6>
+  <h6><strong>Assembly</strong>: Albatross.SemVer.dll</h6>
+  <h5 id="Albatross_SemVer_SematicVersion_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class SematicVersion : IComparable&lt;SematicVersion&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/RushuiGuan/semver/new/develop/apiSpec/new?filename=Albatross_SemVer_SematicVersion__ctor.md&amp;value=---%0Auid%3A%20Albatross.SemVer.SematicVersion.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/RushuiGuan/semver/blob/develop/src/Albatross.SemVer/SematicVersion.cs/#L13">View Source</a>
+  </span>
+  <a id="Albatross_SemVer_SematicVersion__ctor_" data-uid="Albatross.SemVer.SematicVersion.#ctor*"></a>
+  <h4 id="Albatross_SemVer_SematicVersion__ctor" data-uid="Albatross.SemVer.SematicVersion.#ctor">SematicVersion()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SematicVersion()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/RushuiGuan/semver/new/develop/apiSpec/new?filename=Albatross_SemVer_SematicVersion__ctor_System_String_.md&amp;value=---%0Auid%3A%20Albatross.SemVer.SematicVersion.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/RushuiGuan/semver/blob/develop/src/Albatross.SemVer/SematicVersion.cs/#L14">View Source</a>
+  </span>
+  <a id="Albatross_SemVer_SematicVersion__ctor_" data-uid="Albatross.SemVer.SematicVersion.#ctor*"></a>
+  <h4 id="Albatross_SemVer_SematicVersion__ctor_System_String_" data-uid="Albatross.SemVer.SematicVersion.#ctor(System.String)">SematicVersion(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SematicVersion(string version)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/RushuiGuan/semver/new/develop/apiSpec/new?filename=Albatross_SemVer_SematicVersion_AlphaNumericRegex.md&amp;value=---%0Auid%3A%20Albatross.SemVer.SematicVersion.AlphaNumericRegex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/RushuiGuan/semver/blob/develop/src/Albatross.SemVer/SematicVersion.cs/#L27">View Source</a>
+  </span>
+  <h4 id="Albatross_SemVer_SematicVersion_AlphaNumericRegex" data-uid="Albatross.SemVer.SematicVersion.AlphaNumericRegex">AlphaNumericRegex</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Regex AlphaNumericRegex</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Text.RegularExpressions.Regex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/RushuiGuan/semver/new/develop/apiSpec/new?filename=Albatross_SemVer_SematicVersion_LeadingZeroNumericRegex.md&amp;value=---%0Auid%3A%20Albatross.SemVer.SematicVersion.LeadingZeroNumericRegex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/RushuiGuan/semver/blob/develop/src/Albatross.SemVer/SematicVersion.cs/#L30">View Source</a>
+  </span>
+  <h4 id="Albatross_SemVer_SematicVersion_LeadingZeroNumericRegex" data-uid="Albatross.SemVer.SematicVersion.LeadingZeroNumericRegex">LeadingZeroNumericRegex</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Regex LeadingZeroNumericRegex</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Text.RegularExpressions.Regex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/RushuiGuan/semver/new/develop/apiSpec/new?filename=Albatross_SemVer_SematicVersion_NonLeadingZeroNumericRegex.md&amp;value=---%0Auid%3A%20Albatross.SemVer.SematicVersion.NonLeadingZeroNumericRegex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/RushuiGuan/semver/blob/develop/src/Albatross.SemVer/SematicVersion.cs/#L33">View Source</a>
+  </span>
+  <h4 id="Albatross_SemVer_SematicVersion_NonLeadingZeroNumericRegex" data-uid="Albatross.SemVer.SematicVersion.NonLeadingZeroNumericRegex">NonLeadingZeroNumericRegex</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Regex NonLeadingZeroNumericRegex</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Text.RegularExpressions.Regex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/RushuiGuan/semver/new/develop/apiSpec/new?filename=Albatross_SemVer_SematicVersion_HasPreRelease.md&amp;value=---%0Auid%3A%20Albatross.SemVer.SematicVersion.HasPreRelease%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/RushuiGuan/semver/blob/develop/src/Albatross.SemVer/SematicVersion.cs/#L138">View Source</a>
+  </span>
+  <a id="Albatross_SemVer_SematicVersion_HasPreRelease_" data-uid="Albatross.SemVer.SematicVersion.HasPreRelease*"></a>
+  <h4 id="Albatross_SemVer_SematicVersion_HasPreRelease" data-uid="Albatross.SemVer.SematicVersion.HasPreRelease">HasPreRelease</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasPreRelease { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/RushuiGuan/semver/new/develop/apiSpec/new?filename=Albatross_SemVer_SematicVersion_IsRelease.md&amp;value=---%0Auid%3A%20Albatross.SemVer.SematicVersion.IsRelease%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/RushuiGuan/semver/blob/develop/src/Albatross.SemVer/SematicVersion.cs/#L137">View Source</a>
+  </span>
+  <a id="Albatross_SemVer_SematicVersion_IsRelease_" data-uid="Albatross.SemVer.SematicVersion.IsRelease*"></a>
+  <h4 id="Albatross_SemVer_SematicVersion_IsRelease" data-uid="Albatross.SemVer.SematicVersion.IsRelease">IsRelease</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsRelease { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/RushuiGuan/semver/new/develop/apiSpec/new?filename=Albatross_SemVer_SematicVersion_Major.md&amp;value=---%0Auid%3A%20Albatross.SemVer.SematicVersion.Major%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/RushuiGuan/semver/blob/develop/src/Albatross.SemVer/SematicVersion.cs/#L18">View Source</a>
+  </span>
+  <a id="Albatross_SemVer_SematicVersion_Major_" data-uid="Albatross.SemVer.SematicVersion.Major*"></a>
+  <h4 id="Albatross_SemVer_SematicVersion_Major" data-uid="Albatross.SemVer.SematicVersion.Major">Major</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Major { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/RushuiGuan/semver/new/develop/apiSpec/new?filename=Albatross_SemVer_SematicVersion_Metadata.md&amp;value=---%0Auid%3A%20Albatross.SemVer.SematicVersion.Metadata%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/RushuiGuan/semver/blob/develop/src/Albatross.SemVer/SematicVersion.cs/#L42">View Source</a>
+  </span>
+  <a id="Albatross_SemVer_SematicVersion_Metadata_" data-uid="Albatross.SemVer.SematicVersion.Metadata*"></a>
+  <h4 id="Albatross_SemVer_SematicVersion_Metadata" data-uid="Albatross.SemVer.SematicVersion.Metadata">Metadata</h4>
+  <div class="markdown level1 summary"><p>Identifiers MUST comprise only ASCII alphanumerics and hyphen [0-9A-Za-z-]. Identifiers MUST NOT be empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; Metadata { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/RushuiGuan/semver/new/develop/apiSpec/new?filename=Albatross_SemVer_SematicVersion_Minor.md&amp;value=---%0Auid%3A%20Albatross.SemVer.SematicVersion.Minor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/RushuiGuan/semver/blob/develop/src/Albatross.SemVer/SematicVersion.cs/#L19">View Source</a>
+  </span>
+  <a id="Albatross_SemVer_SematicVersion_Minor_" data-uid="Albatross.SemVer.SematicVersion.Minor*"></a>
+  <h4 id="Albatross_SemVer_SematicVersion_Minor" data-uid="Albatross.SemVer.SematicVersion.Minor">Minor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Minor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/RushuiGuan/semver/new/develop/apiSpec/new?filename=Albatross_SemVer_SematicVersion_Patch.md&amp;value=---%0Auid%3A%20Albatross.SemVer.SematicVersion.Patch%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/RushuiGuan/semver/blob/develop/src/Albatross.SemVer/SematicVersion.cs/#L20">View Source</a>
+  </span>
+  <a id="Albatross_SemVer_SematicVersion_Patch_" data-uid="Albatross.SemVer.SematicVersion.Patch*"></a>
+  <h4 id="Albatross_SemVer_SematicVersion_Patch" data-uid="Albatross.SemVer.SematicVersion.Patch">Patch</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Patch { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/RushuiGuan/semver/new/develop/apiSpec/new?filename=Albatross_SemVer_SematicVersion_PreRelease.md&amp;value=---%0Auid%3A%20Albatross.SemVer.SematicVersion.PreRelease%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/RushuiGuan/semver/blob/develop/src/Albatross.SemVer/SematicVersion.cs/#L38">View Source</a>
+  </span>
+  <a id="Albatross_SemVer_SematicVersion_PreRelease_" data-uid="Albatross.SemVer.SematicVersion.PreRelease*"></a>
+  <h4 id="Albatross_SemVer_SematicVersion_PreRelease" data-uid="Albatross.SemVer.SematicVersion.PreRelease">PreRelease</h4>
+  <div class="markdown level1 summary"><p>Identifiers MUST comprise only ASCII alphanumerics and hyphen [0-9A-Za-z-]. Identifiers MUST NOT be empty. Numeric identifiers MUST NOT include leading zeroes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; PreRelease { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/RushuiGuan/semver/new/develop/apiSpec/new?filename=Albatross_SemVer_SematicVersion_CompareTo_Albatross_SemVer_SematicVersion_.md&amp;value=---%0Auid%3A%20Albatross.SemVer.SematicVersion.CompareTo(Albatross.SemVer.SematicVersion)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/RushuiGuan/semver/blob/develop/src/Albatross.SemVer/SematicVersion.cs/#L165">View Source</a>
+  </span>
+  <a id="Albatross_SemVer_SematicVersion_CompareTo_" data-uid="Albatross.SemVer.SematicVersion.CompareTo*"></a>
+  <h4 id="Albatross_SemVer_SematicVersion_CompareTo_Albatross_SemVer_SematicVersion_" data-uid="Albatross.SemVer.SematicVersion.CompareTo(Albatross.SemVer.SematicVersion)">CompareTo(SematicVersion)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CompareTo(SematicVersion sematicVersion)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Albatross.SemVer.SematicVersion.html">SematicVersion</a></td>
+        <td><span class="parametername">sematicVersion</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/RushuiGuan/semver/new/develop/apiSpec/new?filename=Albatross_SemVer_SematicVersion_NextPrerelease_System_String_.md&amp;value=---%0Auid%3A%20Albatross.SemVer.SematicVersion.NextPrerelease(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/RushuiGuan/semver/blob/develop/src/Albatross.SemVer/SematicVersion.cs/#L223">View Source</a>
+  </span>
+  <a id="Albatross_SemVer_SematicVersion_NextPrerelease_" data-uid="Albatross.SemVer.SematicVersion.NextPrerelease*"></a>
+  <h4 id="Albatross_SemVer_SematicVersion_NextPrerelease_System_String_" data-uid="Albatross.SemVer.SematicVersion.NextPrerelease(System.String)">NextPrerelease(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SematicVersion NextPrerelease(string label)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Albatross.SemVer.SematicVersion.html">SematicVersion</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/RushuiGuan/semver/new/develop/apiSpec/new?filename=Albatross_SemVer_SematicVersion_NextRelease_Albatross_SemVer_ReleaseType_.md&amp;value=---%0Auid%3A%20Albatross.SemVer.SematicVersion.NextRelease(Albatross.SemVer.ReleaseType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/RushuiGuan/semver/blob/develop/src/Albatross.SemVer/SematicVersion.cs/#L202">View Source</a>
+  </span>
+  <a id="Albatross_SemVer_SematicVersion_NextRelease_" data-uid="Albatross.SemVer.SematicVersion.NextRelease*"></a>
+  <h4 id="Albatross_SemVer_SematicVersion_NextRelease_Albatross_SemVer_ReleaseType_" data-uid="Albatross.SemVer.SematicVersion.NextRelease(Albatross.SemVer.ReleaseType)">NextRelease(ReleaseType)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SematicVersion NextRelease(ReleaseType type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Albatross.SemVer.ReleaseType.html">ReleaseType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Albatross.SemVer.SematicVersion.html">SematicVersion</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/RushuiGuan/semver/new/develop/apiSpec/new?filename=Albatross_SemVer_SematicVersion_Parse_System_String_.md&amp;value=---%0Auid%3A%20Albatross.SemVer.SematicVersion.Parse(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/RushuiGuan/semver/blob/develop/src/Albatross.SemVer/SematicVersion.cs/#L44">View Source</a>
+  </span>
+  <a id="Albatross_SemVer_SematicVersion_Parse_" data-uid="Albatross.SemVer.SematicVersion.Parse*"></a>
+  <h4 id="Albatross_SemVer_SematicVersion_Parse_System_String_" data-uid="Albatross.SemVer.SematicVersion.Parse(System.String)">Parse(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Parse(string input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/RushuiGuan/semver/new/develop/apiSpec/new?filename=Albatross_SemVer_SematicVersion_ToString.md&amp;value=---%0Auid%3A%20Albatross.SemVer.SematicVersion.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/RushuiGuan/semver/blob/develop/src/Albatross.SemVer/SematicVersion.cs/#L108">View Source</a>
+  </span>
+  <a id="Albatross_SemVer_SematicVersion_ToString_" data-uid="Albatross.SemVer.SematicVersion.ToString*"></a>
+  <h4 id="Albatross_SemVer_SematicVersion_ToString" data-uid="Albatross.SemVer.SematicVersion.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/RushuiGuan/semver/new/develop/apiSpec/new?filename=Albatross_SemVer_SematicVersion_Validate.md&amp;value=---%0Auid%3A%20Albatross.SemVer.SematicVersion.Validate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/RushuiGuan/semver/blob/develop/src/Albatross.SemVer/SematicVersion.cs/#L142">View Source</a>
+  </span>
+  <a id="Albatross_SemVer_SematicVersion_Validate_" data-uid="Albatross.SemVer.SematicVersion.Validate*"></a>
+  <h4 id="Albatross_SemVer_SematicVersion_Validate" data-uid="Albatross.SemVer.SematicVersion.Validate">Validate()</h4>
+  <div class="markdown level1 summary"><p>Validate the prerelease and metadata format</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Validate()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IComparable&lt;T&gt;</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/RushuiGuan/semver/new/develop/apiSpec/new?filename=Albatross_SemVer_SematicVersion.md&amp;value=---%0Auid%3A%20Albatross.SemVer.SematicVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/RushuiGuan/semver/blob/develop/src/Albatross.SemVer/SematicVersion.cs/#L12" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container-fluid">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2018</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
