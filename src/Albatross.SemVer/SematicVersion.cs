@@ -199,5 +199,54 @@ namespace Albatross.SemVer {
 				throw new ArgumentNullException();
 			}
 		}
+		public SematicVersion NextRelease(ReleaseType type) {
+			if (!IsRelease) {
+				PreRelease = new string[0];
+				if (Major == 0) {
+					Major = 1;
+					Minor = 0;
+					Patch = 0;
+				}
+			} else if (type == ReleaseType.Major) {
+				Major++;
+				Minor = 0;
+				Patch = 0;
+			} else if (type == ReleaseType.Minor) {
+				Minor++;
+				Patch = 0;
+			} else {
+				Patch++;
+			}
+			Validate();
+			return this;
+		}
+		public SematicVersion NextPrerelease(string label) {
+			if (string.IsNullOrEmpty(label)) { label = "0"; }
+			var newVersion = new SematicVersion {
+				Major = Major,
+				Minor = Minor,
+				Patch = HasPreRelease ? Patch : Patch + 1,
+				PreRelease = new string[] { label },
+			};
+			if (newVersion.CompareTo(this) > 0) {
+				Patch = newVersion.Patch;
+				PreRelease = new string[] { label, };
+			} else {
+				List<string> list = new List<string>();
+				if (PreRelease != null) { list.AddRange(PreRelease); }
+				NextPrerelease(list);
+				PreRelease = list;
+			}
+			Validate();
+			return this;
+		}
+		private void NextPrerelease(List<string> list) {
+			if (int.TryParse(list.LastOrDefault(), out int numeric)) {
+				numeric++;
+				list[list.Count - 1] = Convert.ToString(numeric);
+			} else {
+				list.Add(Convert.ToString(numeric));
+			}
+		}
 	}
 }
